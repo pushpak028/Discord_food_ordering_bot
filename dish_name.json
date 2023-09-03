@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Pizza",
+      "price": 10.99
+    },
+    {
+      "name": "Burger",
+      "price": 7.49
+    },
+    {
+      "name": "Pasta",
+      "price": 8.99
+    },
+    {
+      "name": "Salad",
+      "price": 4.99
+    },
+    {
+      "name": "Fries",
+      "price": 2.99
+    },
+    {
+      "name": "Soda",
+      "price": 1.99
+    }
+  ]
