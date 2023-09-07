@@ -88,7 +88,7 @@ def app_run(token):
             return
         await client.process_commands(message)
         if "Moderator" not in str(message.author.roles):
-            if load_json.load1(str(message.content.lower()))==1:
+            if load_json.blockwords(str(message.content.lower()))==1:
                 await message.delete()
                 return
     
