@@ -82,6 +82,15 @@ def app_run(token):
                 await ctx.send("butler: your order is empty")
         else:
             await ctx.send("butler: please start the order using '!start_order")
+    @client.event
+    async def on_message(message):
+        if client.user == message.author:
+            return
+        await client.process_commands(message)
+        if "Moderator" not in str(message.author.roles):
+            if load_json.load1(str(message.content.lower()))==1:
+                await message.delete()
+                return
     
 
     client.run(token=token)
